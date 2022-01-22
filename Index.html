@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Dryclean Studio</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="style.css">
+        <link type="text/css" rel="stylesheet" href="nav.css">
+        <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600&display=swap" rel="stylesheet">  
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+        <link rel="icon" href="https://img.icons8.com/ios-glyphs/30/000000/happy--v1.png">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    </head>
+
+    <body>
+        
+        <div class="anim-container">
+
+        <div class="scrollimg-container" id="scrollimg-container1">
+            <img src="imgs/frame1.png" id="scrollimg1">
+        </div>
+        <div class="scrollimg-container" id="scrollimg-container2">
+            <img src="imgs/frame2.png" id="scrollimg1">
+        </div>
+        <div class="scrollimg-container" id="scrollimg-container3">
+            <img src="imgs/frame3.png" id="scrollimg1">
+        </div>
+        <div class="scrollimg-container" id="scrollimg-container4">
+            <img src="imgs/frame4.png" id="scrollimg1">
+        </div>
+        <div class="scrollimg-container" id="scrollimg-container5">
+            <img src="imgs/frame5.png" id="scrollimg1">
+        </div>
+        <div class="scrollimg-container" id="scrollimg-container6">
+            <img src="imgs/frame6.png" id="scrollimg1">
+        </div>
+        <div class="scrollimg-container" id="scrollimg-container7">
+            <img src="imgs/frame7.png" id="scrollimg1">
+        </div>
+        <div class="scrollimg-container" id="scrollimg-container8">
+            <img src="imgs/frame8.png" id="scrollimg1">
+        </div>
+        <div class="scrollimg-container" id="scrollimg-container9">
+            <img src="imgs/frame9.png" id="scrollimg1">
+        </div>
+        <div class="scrollimg-container" id="scrollimg-container10">
+            <img src="imgs/frame10.png" id="scrollimg1">
+        </div>
+
+        <div class="slidecontainer">
+            <input type="range" id="slider" min="1" max="10" value="1" class="slidercss" >
+        </div>
+        <p>Value: <span id="demo"></span></p>
+        
+        </div>
+
+        <script>
+            var slider = document.getElementById("slider");
+            var output = document.getElementById("demo");
+            
+            output.innerHTML = slider.value; // Display the default slider value
+            sliderHandler.apply(slider); // Initialize link's value by calling the handler
+
+            // Update the current slider value (each time you drag the slider handle)
+            slider.oninput = sliderHandler;
+            function sliderHandler() {
+                output.innerHTML = this.value;
+                
+                if(this.value==1)
+                    $("#scrollimg-container1").css({'display':'block'});
+                else if(this.value!=1)
+                    $("#scrollimg-container1").css({'display':'none'});
+                
+                if(this.value==2)
+                    $("#scrollimg-container2").css({'display':'block'});
+                else if(this.value!=2)
+                    $("#scrollimg-container2").css({'display':'none'});
+                
+                if(this.value==3)
+                    $("#scrollimg-container3").css({'display':'block'});
+                else if(this.value!=3)
+                    $("#scrollimg-container3").css({'display':'none'});
+                
+                if(this.value==4)
+                    $("#scrollimg-container4").css({'display':'block'});
+                else if(this.value!=4)
+                    $("#scrollimg-container4").css({'display':'none'});
+                
+                if(this.value==5)
+                    $("#scrollimg-container5").css({'display':'block'});
+                else if(this.value!=5)
+                    $("#scrollimg-container5").css({'display':'none'});
+                
+                if(this.value==6)
+                    $("#scrollimg-container6").css({'display':'block'});
+                else if(this.value!=6)
+                    $("#scrollimg-container6").css({'display':'none'});
+                
+                if(this.value==7)
+                    $("#scrollimg-container7").css({'display':'block'});
+                else if(this.value!=7)
+                    $("#scrollimg-container7").css({'display':'none'});
+                
+                if(this.value==8)
+                    $("#scrollimg-container8").css({'display':'block'});
+                else if(this.value!=8)
+                    $("#scrollimg-container8").css({'display':'none'});
+                
+                if(this.value==9)
+                    $("#scrollimg-container9").css({'display':'block'});
+                else if(this.value!=9)
+                    $("#scrollimg-container9").css({'display':'none'});
+                
+                if(this.value==10)
+                    $("#scrollimg-container10").css({'display':'block'});
+                else if(this.value!=10)
+                    $("#scrollimg-container10").css({'display':'none'});
+            }
+            
+        </script>
+
+    </body>
+</html>
