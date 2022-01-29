@@ -14,10 +14,11 @@ body{
 
 .scrollimg-container{
     width: 100vw;
-    height: 90vh;
+    height: 80vh;
     background: transparent;
     display: none;
     position: absolute; 
+    top: 10px;
     left: 50%;
     transform: translate(-50%, 0);
 }
@@ -67,5 +68,5 @@ body{
   cursor: pointer;
 }
 
-#demo{ color: transparent; }
+#demo{ color: black; }
 
